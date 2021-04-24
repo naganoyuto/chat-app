@@ -31,10 +31,10 @@ RSpec.describe 'ユーザーログイン機能', type: :system do
   end
 
   it 'ログインに失敗し、再びサインインページに戻ってくる' do
-    # 予め、ユーザーをDBに保存する
+    
     @user = FactoryBot.create(:user)
 
-    # トップページに遷移させる
+    
     visit root_path
 
     # ログインしていない場合、サインインページに遷移していることを確認する
