@@ -5,7 +5,6 @@ RSpec.describe 'ユーザーログイン機能', type: :system do
     # トップページに遷移する
     visit root_path
 
-    # ログインしていない場合、サインインページに遷移していることを確認する
     expect(current_path).to eq(new_user_session_path)
   end
 
